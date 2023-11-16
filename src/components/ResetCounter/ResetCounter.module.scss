@@ -1,0 +1,16 @@
+.errorWrapper {
+  display: flex;
+  flex-direction: column;
+
+  .errorText {
+    padding: 40px;
+    color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+    background-color: rgb(21, 101, 192);
+  }
+
+  .errorButton {
+    margin-top: 20px;
+  }
+}

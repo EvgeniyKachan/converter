@@ -1,0 +1,32 @@
+.header {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  box-shadow: inset 0px -1px 1px #e5eaf2;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+
+  .logoWrap {
+    display: flex;
+    align-items: center;
+
+    .logoImg {
+      width: 100px;
+      height: 100px;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .logoImg {
+        animation: logoImgSpin infinite 20s linear;
+      }
+    }
+  }
+}
+
+@keyframes logoImgSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

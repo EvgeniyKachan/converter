@@ -1,7 +1,5 @@
 import { create } from "zustand";
-
 import { Currency } from "../screens/type";
-import { CurrencyList } from "../components/Converter/type";
 type CurrencyState = {
   currencyInStore: Currency[];
   addCurrency: (addList: Currency[]) => void;

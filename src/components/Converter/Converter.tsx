@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import classes from "./Converter.module.scss";
 import SyncAltIcon from "@mui/icons-material/SyncAlt";
-import { ConverterValue, CurrencyList } from "./type";
+import { CurrencyList } from "./type";
 import { useEffect, useState } from "react";
 import { useCurrencyStore } from "../../hooks/useCurrencyStore";
 import { exchange } from "./utils";

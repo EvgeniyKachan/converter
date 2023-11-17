@@ -8,7 +8,7 @@ export function useCurrency() {
     "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=4";
 
   const { data, error, isLoading } = useSWR(url, fetchCurrency, {
-    refreshInterval: 7000,
+    refreshInterval: 30000,
     onSuccess: () => {
       updateLocalStore();
     },

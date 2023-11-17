@@ -6,12 +6,12 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Currency } from "../../screens/type";
+import { CellBuy } from "../Cell/CellBuy";
+import { CellSale } from "../Cell/CellSale";
+import { useCurrencyStore } from "../../hooks/useCurrencyStore";
 
-type TableProps = {
-  rows: Currency[];
-};
-
-export function TableCurrency({ rows }: TableProps) {
+export function TableCurrency() {
+  const currencyInStore = useCurrencyStore((state) => state.currencyInStore);
   return (
     <TableContainer component={Paper}>
       <Table
@@ -27,18 +27,18 @@ export function TableCurrency({ rows }: TableProps) {
               Buy
             </TableCell>
             <TableCell variant="head" align="center">
-              Cell
+              Sale
             </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
+          {currencyInStore.map((row) => (
             <TableRow key={row.ccy}>
               <TableCell align="center">
-                {`${row.ccy} / ${row.base_ccy}`}{" "}
+                {`${row.ccy} / ${row.base_ccy}`}
               </TableCell>
-              <TableCell align="center">{row.buy}</TableCell>
-              <TableCell align="center">{row.sale}</TableCell>
+              <CellBuy rate={row} />
+              <CellSale rate={row} />
             </TableRow>
           ))}
         </TableBody>

@@ -9,14 +9,12 @@ import { useEffect } from "react";
 export function ConverterPage() {
   const [currency] = useCurrency();
   const counter = localStorage.getItem("counter") || 0;
-
-  const currencyInStore = useCurrencyStore((state) => state.currencyInStore);
   const isError = +counter === 500;
   const addCurrency = useCurrencyStore((state) => state.addCurrency);
 
   useEffect(() => {
     addCurrency(currency);
-  }, []);
+  }, [addCurrency]);
 
   return (
     <div className={classes.pageWrapper}>
@@ -24,7 +22,7 @@ export function ConverterPage() {
         <ResetCounter />
       ) : (
         <div className={classes.tableWrapper}>
-          <TableCurrency rows={currency} />
+          <TableCurrency />
           <Converter />
         </div>
       )}

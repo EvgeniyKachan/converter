@@ -1,8 +1,3 @@
-export type ConverterValue = {
-  amount: number;
-  currency: CurrencyList;
-};
-
 export enum CurrencyList {
   UAH = "UAH",
   CHF = "CHF",

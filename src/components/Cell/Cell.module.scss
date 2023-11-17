@@ -1,0 +1,25 @@
+.cell {
+  position: relative;
+  .buttonsWrapper {
+    .buttonSave {
+      top: 24px;
+      right: 56px;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .editButton {
+      display: none;
+    }
+  }
+}
+
+.cell:hover {
+  .editButton {
+    display: inline-block;
+    top: 24px;
+    right: 56px;
+    position: absolute;
+    z-index: 2;
+  }
+}

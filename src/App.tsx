@@ -1,10 +1,10 @@
 import { PageLayout } from "./components/PageLayout/PageLayout";
-import { Convertor } from "./screens/Convertor";
+import { ConverterPage } from "./screens/ConverterPage";
 
 function App() {
   return (
     <PageLayout>
-      <Convertor />
+      <ConverterPage />
     </PageLayout>
   );
 }

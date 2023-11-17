@@ -1,0 +1,11 @@
+.pageWrapper {
+  margin: auto;
+  padding: 40px;
+  max-width: 1000px;
+
+  .tableWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}

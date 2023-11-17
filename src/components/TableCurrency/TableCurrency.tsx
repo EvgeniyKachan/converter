@@ -5,14 +5,13 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-//import classes from "./TableConvertor.module.scss";
 import { Currency } from "../../screens/type";
 
 type TableProps = {
   rows: Currency[];
 };
 
-export function TableConvertor({ rows }: TableProps) {
+export function TableCurrency({ rows }: TableProps) {
   return (
     <TableContainer component={Paper}>
       <Table

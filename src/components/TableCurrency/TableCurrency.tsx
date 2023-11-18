@@ -5,7 +5,6 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import { Currency } from "../../screens/type";
 import { CellBuy } from "../Cell/CellBuy";
 import { CellSale } from "../Cell/CellSale";
 import { useCurrencyStore } from "../../hooks/useCurrencyStore";

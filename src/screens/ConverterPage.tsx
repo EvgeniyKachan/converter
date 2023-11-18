@@ -14,7 +14,7 @@ export function ConverterPage() {
 
   useEffect(() => {
     addCurrency(currency);
-  }, [addCurrency]);
+  }, [addCurrency, currency]);
 
   return (
     <div className={classes.pageWrapper}>

@@ -6,7 +6,7 @@ export function exchange(
   changeCurrency: CurrencyList,
   resultCurrency: CurrencyList,
   currencyInStore: Currency[]
-) {
+): number {
   if (
     changeCurrency !== CurrencyList.UAH &&
     resultCurrency !== CurrencyList.UAH

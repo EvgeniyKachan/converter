@@ -1,9 +1,9 @@
 import useSWR from "swr";
 import { fetchCurrency } from "../api/currency";
-import { getStabdata, updateLocalStore } from "./config";
+import { getStabRate, updateLocalStore } from "./config";
 
 export function useCurrency() {
-  const stubData = getStabdata();
+  const stubData = getStabRate();
   const url =
     "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=4";
 

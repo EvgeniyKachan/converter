@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import classes from "./ResetCounter.module.scss";
+import RotateRightIcon from "@mui/icons-material/RotateRight";
 import { useState } from "react";
 
 export function ResetCounter() {
@@ -10,7 +11,10 @@ export function ResetCounter() {
   };
 
   return isLoading ? (
-    <div>Loading ... </div>
+    <div className={classes.loading}>
+      <RotateRightIcon className={classes.loadingIcon} />
+      Loading ...
+    </div>
   ) : (
     <div className={classes.errorWrapper}>
       <div className={classes.errorText}>

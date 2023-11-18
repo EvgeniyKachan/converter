@@ -62,7 +62,6 @@ export function CellBuy({ rate }: CellBuyProps) {
       </div>
       <TextField
         value={currentRate.buy}
-        defaultValue={currentRate.buy}
         onChange={(event) => {
           const isErrorValue = isErrorRate(+rate.buy, +event.target.value);
           setIsError(isErrorValue);

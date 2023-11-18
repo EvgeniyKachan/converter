@@ -1,4 +1,4 @@
-export function getStabdata() {
+export function getStabRate() {
   return [
     { ccy: "CHF", base_ccy: "UAH", buy: "40.00670", sale: "40.00670" },
     { ccy: "CZK", base_ccy: "UAH", buy: "1.56860", sale: "1.56860" },

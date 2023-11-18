@@ -36,7 +36,6 @@ export function Converter() {
       <TextField
         name="change"
         label="Change"
-        defaultValue={changeAmount}
         variant="standard"
         value={changeAmount}
         type="number"

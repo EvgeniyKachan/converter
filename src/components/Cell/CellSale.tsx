@@ -62,7 +62,6 @@ export function CellSale({ rate }: CellSaleProps) {
       </div>
       <TextField
         value={currentRate.sale}
-        defaultValue={currentRate.sale}
         onChange={(event) => {
           const isErrorValue = isErrorRate(+rate.sale, +event.target.value);
           setIsError(isErrorValue);

@@ -1,5 +1,4 @@
 .header {
-  width: 100vw;
   height: 100px;
   display: flex;
   box-shadow: inset 0px -1px 1px #e5eaf2;
@@ -14,10 +13,8 @@
       height: 100px;
     }
 
-    @media (prefers-reduced-motion: no-preference) {
-      .logoImg {
-        animation: logoImgSpin infinite 20s linear;
-      }
+    .logoImg {
+      animation: logoImgSpin infinite 20s linear;
     }
   }
 }

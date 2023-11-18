@@ -9,7 +9,7 @@ import { useEffect } from "react";
 export function ConverterPage() {
   const [currency] = useCurrency();
   const counter = localStorage.getItem("counter") || 0;
-  const isError = +counter === 500;
+  const isError = +counter === 5;
   const addCurrency = useCurrencyStore((state) => state.addCurrency);
 
   useEffect(() => {
